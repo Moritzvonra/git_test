@@ -1,0 +1,93 @@
+.calculatorBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    border-color: grey;
+}
+
+.display {
+    display: flex;
+    width: 360px;
+    height: 60px;
+    margin-top: 15px;
+    background-color: white;
+    border-color: white;
+    border-radius: 5px;
+    justify-content: flex-end;
+    font-size: 18px;
+    text-align: center;
+}
+
+.currentCalculation {
+    padding-right: 10px;
+}
+
+.buttonArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+}
+
+
+.numberButtons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    align-items: end;
+    justify-content: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    gap: 5px;
+}
+
+.number {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    border-color: lightgrey;
+    background-color: white;
+}
+
+.operatorButtons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 300px;
+    align-items: end;
+    justify-content: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    gap: 5px;
+}
+
+.operator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    border-color: lightgrey;
+    background-color: white;
+}
+
+#equalButton {
+    width: 130px;
+}
+
