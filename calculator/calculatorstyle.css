@@ -12,19 +12,36 @@
 
 .display {
     display: flex;
-    width: 360px;
-    height: 60px;
+    flex-direction: column;
+    max-width: 360px;
+    max-height: 60px;
+    min-width: 360px;
+    min-height: 60px;
     margin-top: 15px;
     background-color: white;
     border-color: white;
     border-radius: 5px;
     justify-content: flex-end;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
 }
 
-.currentCalculation {
+.calculationLogic {
+    align-self: flex-end;
+    justify-content: right;
+    padding-top: 3px;
+    padding-bottom: 3px;
     padding-right: 10px;
+    font-size: 10px;
+    margin: 1px;
+}
+
+.currentCalculation {
+    justify-content: flex-end;
+    align-self: flex-end;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    margin: 5px;
 }
 
 .buttonArea {
@@ -77,6 +94,30 @@
 
 .operator {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    border-color: lightgrey;
+    background-color: white;
+}
+
+.executer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    border-color: lightgrey;
+    background-color: white;
+}
+
+.equalizer {
+     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
