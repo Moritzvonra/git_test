@@ -26,14 +26,18 @@ let enteringSecondOperator = false;
 
 numbers.forEach(number => {
     number.addEventListener("click", () => {
-        if (!enteringSecondNumber) {       
+        if (!enteringSecondNumber && currentFirstNumber === "") {       
         currentFirstNumber += number.textContent;
         display.textContent +=number.textContent;
     }
-    else {
+    else if (enteringSecondNumber === true) {
         currentSecondNumber += number.textContent;
         display.textContent += " " + currentSecondNumber;
     }
+    else {
+        currentFirstNumber = number.textContent;
+        display.textContent = number.textContent;
+    };
 });
 });
 
